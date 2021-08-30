@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        {% if title %}
-            <title>{{ title }}</title>
-        {% elif heading %}
-            <title>{{ heading }}</title>
-        {% else %}
-            <title>Django Blog About</title>
-        {% endif %}
-    </head>
+{% extends "blog/base.html" %}
 
-    <body>
-        <h1>Blog About</h1>
-        <p>This is my About page for the Blog Web App.</p>
-    </body>
-</html>
-
+{% block content %}
+    <h1>Blog About</h1>
+    <p>This is my About page for the Blog Web App.</p>
+{% endblock %}
