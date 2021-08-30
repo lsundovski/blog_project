@@ -30,4 +30,8 @@ def home(request):
 
 # Create your views here.
 def about(request):
-    return HttpResponse("<h1> Blog About </h1>")
+    context = {
+        "title": "Blog About"
+    }
+
+    return render(request, "blog/about.html", context=context)
